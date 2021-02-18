@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html lang="en-in">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>GivingThanks</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+  </head>
+
+  <body>
+
+    <div class="blue">&nbsp;</div>
+
+    <header>
+        <img id="logo" src="images/logo.png" alt="GivingThanks" />
+        <img id="banner" src="images/banner.jpg" alt="banner" />
+    </header>
+
+    <form id="donate" action="donation.php" method="post">
+
+        <select name="item" id="item"><option>Select Item</option><option>Books</option><option>Others</option></select>
+        <label id="itemlabel" for="image">Item Image: </label><input name="image" id="image" type="file" accept="image/*" />
+        <input name="description" id="description" type="text" placeholder="Item Description" />
+
+        <input id="date" name="date" type="date" placeholder="Date" />
+        <input id="time" name="time" type="time" placeholder="Time" />
+        <textarea id="address" name="address">Pick Up Address</textarea>
+        
+        <input id="name" name="name" type="text" placeholder="Name" />
+        <input id="mobile" name="mobile" type="tel" placeholder="Mobile" />
+        <input id="email" name="email" type="email" placeholder="Email" />
+
+        <!--div class="g-recaptcha" data-sitekey="6Ld7qRQUAAAAAC2SHmnQFd2Tz24KNuHcm1hqKjcb"></div-->
+
+        <input type="submit" id="submit" value="Donate" />
+
+    </form>
+
+    <section id="vision">
+        <h2>Our Vision</h2>
+        <p>There are over 31 lakh NGOs in our country and thousands of noble souls who feel for the needy and wish to make a difference. For us, this means millions of opportunities to help.
+        In this fast paced world, where time is that biggest constraint, we cant to make the process of helping the needy extremely effective and efficient by being the catalyst. We have noticed
+        that people help the NGOs they are aware of in whatever way possible (by giving good/services). However, the main probless that occurs is that these NGOs may not need the goods being
+        given to them. We feel that no noble deed should ever go to waste. Thus we connect the donor to the NGO who requires the goods. Thus increasing the effect and efficiency of every noble
+        deed being carried out. Our main goal is to bridge the gap between the 'haves' and 'have-nots' by being a "new age robin hood". We are here to make every noble deed effective.
+        </p>
+    </section>
+
+    <section id="mission">
+        <h2>Every helping hand will help beautify India</h2>
+        <p>Our mission is to help you donate household items to any cause so that your help reaches the needy. GivingThanks is a donation platform that allows you to donate various items to verified NGOs.</p>
+        <div id="boxes">
+            <div id="ngobox">
+                <img src="images/ngos.png" />
+                <h3>NGOs</h3>
+                <p>The Government of India has approved the NGOs who are registered with us. The NGO can directly log-in and get in touch with the donors to ask them details about the products.</p>
+            </div>
+            <div id="gtbox">
+                <img src="images/givingthanks.png" />
+                <h3>GivingThanks</h3>
+                <p>We provide a platform to connect the donors who have the goods to donate to the NGOs who require them. We believe that no noble deed must go to waste and thus we make the process as efficient as possible.</p>
+            </div>
+            <div id="donorbox">
+                <img src="images/donors.png" />
+                <h3>Donors</h3>
+                <p>Donors can list the items which they would like on our website, can provide details for NGOs to contact them. They can then set up a convenient pick up time for the goods to be picked up.</p>
+            </div>
+        </div>
+    </section>
+
+    <img id="overview" src="images/overview.png" alt="overview" />
+
+    <section id="contact">
+        <h2>We are just a click away!</h2>
+        <p>Whether you need any information about our services, give us any suggestion, or just want to cheer us for this great cause - this is the place where your voice will be heard!</p>
+        <form id="contactform" action="contact.php" method="post">
+            <input type="text" id="contactname" name="contactname" placeholder="Name:" />
+            <input type="text" id="contactemail" name="contactemail" placeholder="Email:" /><br/>
+            <input type="text" id="contactsubject" name="contactsubject" placeholder="Subject:" />
+            <input type="text" id="contactmessage" name="contactmessage" placeholder="Message:" /><br/>
+            <input type="submit" value="Submit" />
+        </form>
+    </section>
+
+
+    <div class="blue">GivingThanks.in &copy; 2017. All Rights Reserved.</div>
+
+  </body>
+
+</html>

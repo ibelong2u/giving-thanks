@@ -1,0 +1,206 @@
+
+@import "compass/reset";
+@import "compass/css3";
+
+$orange: #fbc16a;
+$lightblue: #1ebff2;
+$darkblue: #23267c;
+
+body {
+    min-width: 900px;
+    font-family: sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    padding-top: 25px;
+    color: $darkblue;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $darkblue;
+    font-size: 16px;
+    padding-top: 15px;
+}
+
+.blue {
+    background-color: $lightblue;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 14px;
+    letter-spacing: 2px;
+}
+
+#logo {
+    display: block;
+    margin: 25px auto;
+}
+
+#banner {
+    width: 100%;
+}
+
+#donate {
+    display: block;
+    margin: 50px auto;
+    background: url("../images/donate.png") no-repeat top left;
+    background-size: contain;
+    width: 900px;
+    height: 720px;
+    position: relative;
+}
+
+#vision {
+    background-color: $lightblue;
+    p {
+        color: #FFF;
+        padding: 25px;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+}
+
+#mission {
+    p {
+        color: #000;
+        padding: 25px;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 1px;        
+    }
+
+    #boxes {
+        display: table-row;
+        div {
+            display: table-cell;
+            text-align: center;
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+#contact {
+    background: $orange;
+    p {
+        color: #000;
+        padding: 25px;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 1px;            
+    }
+}
+
+#donate {
+    input, select, option, label, textarea {
+        position: absolute;
+        color: #777;
+        padding: 5px;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    #item {
+        width: 315px;
+        top: 60px;
+        left: 500px;
+    }
+    #itemlabel {
+        top: 108px;
+        left: 500px;   
+        font-weight: bold;     
+    }
+    #image {
+        top: 104px;
+        left: 600px;
+    }
+    #description {
+        top: 152px;
+        left: 500px;
+        width: 300px;
+    }
+    #date {
+        top: 275px;
+        left: 500px
+    }
+    #time {
+        top: 275px;
+        left: 718px;
+        width: 80px;
+    }
+    #address {
+        left: 500px;
+        top: 330px;
+        width: 300px;
+    }
+    #name {
+        left: 500px;
+        top: 480px;
+        width: 300px;
+    }
+    #mobile {
+        left: 500px;
+        top: 530px;
+        width: 100px;
+    }
+    #email {
+        left: 630px;
+        top: 530px;
+        width: 170px;
+    }
+    .g-recaptcha {
+        left: 500px;
+        top: 578px;
+        position: absolute;
+    }
+    #submit {
+        top: 667px;
+        left: 500px;
+        width: 320px;
+        background-color: $lightblue;
+        color: #FFF;
+        font-weight: bold;
+        border: none;
+        text-transform: uppercase;
+        line-height: 2;
+    }
+}
+
+#overview {
+    width: 100%;
+}
+
+#contactform {
+    text-align: center;
+    input {
+        display: inline-block;
+        font-size: 16px;
+        background: transparent;
+        border: 2px solid #FFF;
+        color: #FFF;
+        padding: 5px;
+        width: 300px;
+        margin: 5px;
+        font-weight: bold;
+        @include input-placeholder {
+            color: #FFF;
+        }
+    }
+    input[type="submit"] {
+        background-color: $darkblue !important;
+        border-color: $darkblue;
+        border-radius: 5px;
+        width: 200px;
+        margin: 20px auto 25px;
+        line-height: 2;
+    }
+}
